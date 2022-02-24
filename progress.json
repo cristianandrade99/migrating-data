@@ -1,0 +1,570 @@
+[
+  {
+    "key": "2003-01",
+    "migrated": true
+  },
+  {
+    "key": "2004-09",
+    "migrated": true
+  },
+  {
+    "key": "2004-10",
+    "migrated": true
+  },
+  {
+    "key": "2004-11",
+    "migrated": true
+  },
+  {
+    "key": "2005-01",
+    "migrated": true
+  },
+  {
+    "key": "2006-01",
+    "migrated": true
+  },
+  {
+    "key": "2007-06",
+    "migrated": true
+  },
+  {
+    "key": "2007-09",
+    "migrated": true
+  },
+  {
+    "key": "2007-12",
+    "migrated": true
+  },
+  {
+    "key": "2009-04",
+    "migrated": true
+  },
+  {
+    "key": "2009-06",
+    "migrated": true
+  },
+  {
+    "key": "2009-07",
+    "migrated": true
+  },
+  {
+    "key": "2010-09",
+    "migrated": true
+  },
+  {
+    "key": "2010-10",
+    "migrated": true
+  },
+  {
+    "key": "2010-11",
+    "migrated": true
+  },
+  {
+    "key": "2010-12",
+    "migrated": true
+  },
+  {
+    "key": "2011-01",
+    "migrated": true
+  },
+  {
+    "key": "2011-02",
+    "migrated": true
+  },
+  {
+    "key": "2011-03",
+    "migrated": true
+  },
+  {
+    "key": "2011-04",
+    "migrated": true
+  },
+  {
+    "key": "2011-05",
+    "migrated": true
+  },
+  {
+    "key": "2011-07",
+    "migrated": true
+  },
+  {
+    "key": "2011-08",
+    "migrated": true
+  },
+  {
+    "key": "2011-09",
+    "migrated": true
+  },
+  {
+    "key": "2011-10",
+    "migrated": true
+  },
+  {
+    "key": "2011-11",
+    "migrated": true
+  },
+  {
+    "key": "2011-12",
+    "migrated": true
+  },
+  {
+    "key": "2012-01",
+    "migrated": true
+  },
+  {
+    "key": "2012-02",
+    "migrated": true
+  },
+  {
+    "key": "2012-03",
+    "migrated": true
+  },
+  {
+    "key": "2012-04",
+    "migrated": true
+  },
+  {
+    "key": "2012-05",
+    "migrated": true
+  },
+  {
+    "key": "2012-06",
+    "migrated": true
+  },
+  {
+    "key": "2012-07",
+    "migrated": true
+  },
+  {
+    "key": "2012-08",
+    "migrated": true
+  },
+  {
+    "key": "2012-09",
+    "migrated": true
+  },
+  {
+    "key": "2012-10",
+    "migrated": true
+  },
+  {
+    "key": "2012-11",
+    "migrated": true
+  },
+  {
+    "key": "2012-12",
+    "migrated": true
+  },
+  {
+    "key": "2013-01",
+    "migrated": true
+  },
+  {
+    "key": "2013-02",
+    "migrated": true
+  },
+  {
+    "key": "2013-03",
+    "migrated": true
+  },
+  {
+    "key": "2013-04",
+    "migrated": true
+  },
+  {
+    "key": "2013-05",
+    "migrated": true
+  },
+  {
+    "key": "2013-06",
+    "migrated": true
+  },
+  {
+    "key": "2013-07",
+    "migrated": true
+  },
+  {
+    "key": "2013-08",
+    "migrated": true
+  },
+  {
+    "key": "2013-09",
+    "migrated": true
+  },
+  {
+    "key": "2013-10",
+    "migrated": true
+  },
+  {
+    "key": "2013-11",
+    "migrated": true
+  },
+  {
+    "key": "2013-12",
+    "migrated": true
+  },
+  {
+    "key": "2014-01",
+    "migrated": true
+  },
+  {
+    "key": "2014-02",
+    "migrated": true
+  },
+  {
+    "key": "2014-03",
+    "migrated": true
+  },
+  {
+    "key": "2014-04",
+    "migrated": true
+  },
+  {
+    "key": "2014-05",
+    "migrated": true
+  },
+  {
+    "key": "2014-06",
+    "migrated": true
+  },
+  {
+    "key": "2014-07",
+    "migrated": true
+  },
+  {
+    "key": "2014-08",
+    "migrated": true
+  },
+  {
+    "key": "2014-09",
+    "migrated": true
+  },
+  {
+    "key": "2014-10",
+    "migrated": false
+  },
+  {
+    "key": "2014-11",
+    "migrated": false
+  },
+  {
+    "key": "2014-12",
+    "migrated": false
+  },
+  {
+    "key": "2015-01",
+    "migrated": false
+  },
+  {
+    "key": "2015-02",
+    "migrated": false
+  },
+  {
+    "key": "2015-03",
+    "migrated": false
+  },
+  {
+    "key": "2015-04",
+    "migrated": false
+  },
+  {
+    "key": "2015-05",
+    "migrated": false
+  },
+  {
+    "key": "2015-06",
+    "migrated": false
+  },
+  {
+    "key": "2015-07",
+    "migrated": false
+  },
+  {
+    "key": "2015-08",
+    "migrated": false
+  },
+  {
+    "key": "2015-09",
+    "migrated": false
+  },
+  {
+    "key": "2015-10",
+    "migrated": false
+  },
+  {
+    "key": "2015-11",
+    "migrated": false
+  },
+  {
+    "key": "2015-12",
+    "migrated": false
+  },
+  {
+    "key": "2016-01",
+    "migrated": false
+  },
+  {
+    "key": "2016-02",
+    "migrated": false
+  },
+  {
+    "key": "2016-03",
+    "migrated": false
+  },
+  {
+    "key": "2016-04",
+    "migrated": false
+  },
+  {
+    "key": "2016-05",
+    "migrated": false
+  },
+  {
+    "key": "2016-06",
+    "migrated": false
+  },
+  {
+    "key": "2016-07",
+    "migrated": false
+  },
+  {
+    "key": "2016-08",
+    "migrated": false
+  },
+  {
+    "key": "2016-09",
+    "migrated": false
+  },
+  {
+    "key": "2016-10",
+    "migrated": false
+  },
+  {
+    "key": "2016-11",
+    "migrated": false
+  },
+  {
+    "key": "2016-12",
+    "migrated": false
+  },
+  {
+    "key": "2017-01",
+    "migrated": false
+  },
+  {
+    "key": "2017-02",
+    "migrated": false
+  },
+  {
+    "key": "2017-03",
+    "migrated": false
+  },
+  {
+    "key": "2017-04",
+    "migrated": false
+  },
+  {
+    "key": "2017-05",
+    "migrated": false
+  },
+  {
+    "key": "2017-06",
+    "migrated": false
+  },
+  {
+    "key": "2017-07",
+    "migrated": false
+  },
+  {
+    "key": "2017-08",
+    "migrated": false
+  },
+  {
+    "key": "2017-09",
+    "migrated": false
+  },
+  {
+    "key": "2017-10",
+    "migrated": false
+  },
+  {
+    "key": "2017-11",
+    "migrated": false
+  },
+  {
+    "key": "2017-12",
+    "migrated": false
+  },
+  {
+    "key": "2018-01",
+    "migrated": false
+  },
+  {
+    "key": "2018-02",
+    "migrated": false
+  },
+  {
+    "key": "2018-03",
+    "migrated": false
+  },
+  {
+    "key": "2018-04",
+    "migrated": false
+  },
+  {
+    "key": "2018-05",
+    "migrated": false
+  },
+  {
+    "key": "2018-06",
+    "migrated": false
+  },
+  {
+    "key": "2018-07",
+    "migrated": false
+  },
+  {
+    "key": "2018-08",
+    "migrated": false
+  },
+  {
+    "key": "2018-09",
+    "migrated": false
+  },
+  {
+    "key": "2018-10",
+    "migrated": false
+  },
+  {
+    "key": "2018-11",
+    "migrated": false
+  },
+  {
+    "key": "2018-12",
+    "migrated": false
+  },
+  {
+    "key": "2019-01",
+    "migrated": false
+  },
+  {
+    "key": "2019-02",
+    "migrated": false
+  },
+  {
+    "key": "2019-03",
+    "migrated": false
+  },
+  {
+    "key": "2019-04",
+    "migrated": false
+  },
+  {
+    "key": "2019-05",
+    "migrated": false
+  },
+  {
+    "key": "2019-06",
+    "migrated": false
+  },
+  {
+    "key": "2019-07",
+    "migrated": false
+  },
+  {
+    "key": "2019-08",
+    "migrated": false
+  },
+  {
+    "key": "2019-09",
+    "migrated": false
+  },
+  {
+    "key": "2019-10",
+    "migrated": false
+  },
+  {
+    "key": "2019-11",
+    "migrated": false
+  },
+  {
+    "key": "2019-12",
+    "migrated": false
+  },
+  {
+    "key": "2020-01",
+    "migrated": false
+  },
+  {
+    "key": "2020-02",
+    "migrated": false
+  },
+  {
+    "key": "2020-03",
+    "migrated": false
+  },
+  {
+    "key": "2020-04",
+    "migrated": false
+  },
+  {
+    "key": "2020-05",
+    "migrated": false
+  },
+  {
+    "key": "2020-06",
+    "migrated": false
+  },
+  {
+    "key": "2020-07",
+    "migrated": false
+  },
+  {
+    "key": "2020-08",
+    "migrated": false
+  },
+  {
+    "key": "2020-09",
+    "migrated": false
+  },
+  {
+    "key": "2020-10",
+    "migrated": false
+  },
+  {
+    "key": "2020-11",
+    "migrated": false
+  },
+  {
+    "key": "2020-12",
+    "migrated": false
+  },
+  {
+    "key": "2021-01",
+    "migrated": false
+  },
+  {
+    "key": "2021-02",
+    "migrated": false
+  },
+  {
+    "key": "2021-03",
+    "migrated": false
+  },
+  {
+    "key": "2021-04",
+    "migrated": false
+  },
+  {
+    "key": "2021-05",
+    "migrated": false
+  },
+  {
+    "key": "2021-07",
+    "migrated": false
+  },
+  {
+    "key": "2021-09",
+    "migrated": false
+  }
+]
