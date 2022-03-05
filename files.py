@@ -161,4 +161,7 @@ elif action==migrate:
     migrate_data()
 
 # cd C:\Users\Games\Downloads\migration-data 
-# python files.py C:\Users\Games\Documents\Migracion prepare
+# python files.py C:\Users\Games\Documents\Migracion migrate
+
+# TO DO
+# - Migrate files that are not images nor videos (maintaint path structure)
