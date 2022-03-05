@@ -1,6 +1,110 @@
 [
   {
-    "key": "2003-01",
+    "key": "1980-01",
+    "migrated": true
+  },
+  {
+    "key": "1997-06",
+    "migrated": true
+  },
+  {
+    "key": "1998-04",
+    "migrated": true
+  },
+  {
+    "key": "1998-05",
+    "migrated": true
+  },
+  {
+    "key": "1999-06",
+    "migrated": true
+  },
+  {
+    "key": "1999-10",
+    "migrated": true
+  },
+  {
+    "key": "2000-02",
+    "migrated": true
+  },
+  {
+    "key": "2000-07",
+    "migrated": true
+  },
+  {
+    "key": "2000-09",
+    "migrated": true
+  },
+  {
+    "key": "2001-03",
+    "migrated": true
+  },
+  {
+    "key": "2001-04",
+    "migrated": true
+  },
+  {
+    "key": "2001-08",
+    "migrated": true
+  },
+  {
+    "key": "2001-11",
+    "migrated": true
+  },
+  {
+    "key": "2001-12",
+    "migrated": true
+  },
+  {
+    "key": "2002-02",
+    "migrated": true
+  },
+  {
+    "key": "2002-09",
+    "migrated": true
+  },
+  {
+    "key": "2003-02",
+    "migrated": true
+  },
+  {
+    "key": "2003-06",
+    "migrated": true
+  },
+  {
+    "key": "2003-08",
+    "migrated": true
+  },
+  {
+    "key": "2003-09",
+    "migrated": true
+  },
+  {
+    "key": "2003-11",
+    "migrated": true
+  },
+  {
+    "key": "2003-12",
+    "migrated": true
+  },
+  {
+    "key": "2004-01",
+    "migrated": true
+  },
+  {
+    "key": "2004-04",
+    "migrated": true
+  },
+  {
+    "key": "2004-06",
+    "migrated": true
+  },
+  {
+    "key": "2004-07",
+    "migrated": true
+  },
+  {
+    "key": "2004-08",
     "migrated": true
   },
   {
@@ -20,7 +124,99 @@
     "migrated": true
   },
   {
+    "key": "2005-02",
+    "migrated": true
+  },
+  {
+    "key": "2005-03",
+    "migrated": true
+  },
+  {
+    "key": "2005-04",
+    "migrated": true
+  },
+  {
+    "key": "2005-05",
+    "migrated": true
+  },
+  {
+    "key": "2005-06",
+    "migrated": true
+  },
+  {
+    "key": "2005-07",
+    "migrated": true
+  },
+  {
+    "key": "2005-08",
+    "migrated": true
+  },
+  {
+    "key": "2005-09",
+    "migrated": true
+  },
+  {
+    "key": "2005-10",
+    "migrated": true
+  },
+  {
+    "key": "2005-11",
+    "migrated": true
+  },
+  {
+    "key": "2005-12",
+    "migrated": true
+  },
+  {
     "key": "2006-01",
+    "migrated": true
+  },
+  {
+    "key": "2006-02",
+    "migrated": true
+  },
+  {
+    "key": "2006-03",
+    "migrated": true
+  },
+  {
+    "key": "2006-04",
+    "migrated": true
+  },
+  {
+    "key": "2006-05",
+    "migrated": true
+  },
+  {
+    "key": "2006-06",
+    "migrated": true
+  },
+  {
+    "key": "2006-07",
+    "migrated": true
+  },
+  {
+    "key": "2006-08",
+    "migrated": true
+  },
+  {
+    "key": "2006-10",
+    "migrated": true
+  },
+  {
+    "key": "2006-11",
+    "migrated": true
+  },
+  {
+    "key": "2007-03",
+    "migrated": true
+  },
+  {
+    "key": "2007-04",
+    "migrated": true
+  },
+  {
+    "key": "2007-05",
     "migrated": true
   },
   {
@@ -28,7 +224,23 @@
     "migrated": true
   },
   {
+    "key": "2007-07",
+    "migrated": true
+  },
+  {
+    "key": "2007-08",
+    "migrated": true
+  },
+  {
     "key": "2007-09",
+    "migrated": true
+  },
+  {
+    "key": "2007-10",
+    "migrated": true
+  },
+  {
+    "key": "2007-11",
     "migrated": true
   },
   {
@@ -36,7 +248,71 @@
     "migrated": true
   },
   {
+    "key": "2008-01",
+    "migrated": true
+  },
+  {
+    "key": "2008-02",
+    "migrated": true
+  },
+  {
+    "key": "2008-03",
+    "migrated": true
+  },
+  {
+    "key": "2008-04",
+    "migrated": true
+  },
+  {
+    "key": "2008-05",
+    "migrated": true
+  },
+  {
+    "key": "2008-06",
+    "migrated": true
+  },
+  {
+    "key": "2008-07",
+    "migrated": true
+  },
+  {
+    "key": "2008-08",
+    "migrated": true
+  },
+  {
+    "key": "2008-09",
+    "migrated": true
+  },
+  {
+    "key": "2008-10",
+    "migrated": true
+  },
+  {
+    "key": "2008-11",
+    "migrated": true
+  },
+  {
+    "key": "2008-12",
+    "migrated": true
+  },
+  {
+    "key": "2009-01",
+    "migrated": true
+  },
+  {
+    "key": "2009-02",
+    "migrated": true
+  },
+  {
+    "key": "2009-03",
+    "migrated": true
+  },
+  {
     "key": "2009-04",
+    "migrated": true
+  },
+  {
+    "key": "2009-05",
     "migrated": true
   },
   {
@@ -45,6 +321,58 @@
   },
   {
     "key": "2009-07",
+    "migrated": true
+  },
+  {
+    "key": "2009-08",
+    "migrated": true
+  },
+  {
+    "key": "2009-09",
+    "migrated": true
+  },
+  {
+    "key": "2009-10",
+    "migrated": true
+  },
+  {
+    "key": "2009-11",
+    "migrated": true
+  },
+  {
+    "key": "2009-12",
+    "migrated": true
+  },
+  {
+    "key": "2010-01",
+    "migrated": true
+  },
+  {
+    "key": "2010-02",
+    "migrated": true
+  },
+  {
+    "key": "2010-03",
+    "migrated": true
+  },
+  {
+    "key": "2010-04",
+    "migrated": true
+  },
+  {
+    "key": "2010-05",
+    "migrated": true
+  },
+  {
+    "key": "2010-06",
+    "migrated": true
+  },
+  {
+    "key": "2010-07",
+    "migrated": true
+  },
+  {
+    "key": "2010-08",
     "migrated": true
   },
   {
@@ -81,6 +409,10 @@
   },
   {
     "key": "2011-05",
+    "migrated": true
+  },
+  {
+    "key": "2011-06",
     "migrated": true
   },
   {
@@ -285,10 +617,6 @@
   },
   {
     "key": "2015-09",
-    "migrated": true
-  },
-  {
-    "key": "2015-10",
     "migrated": true
   },
   {
@@ -560,11 +888,19 @@
     "migrated": true
   },
   {
+    "key": "2021-06",
+    "migrated": true
+  },
+  {
     "key": "2021-07",
     "migrated": true
   },
   {
-    "key": "2021-09",
+    "key": "2021-08",
+    "migrated": true
+  },
+  {
+    "key": "2022-02",
     "migrated": true
   }
 ]

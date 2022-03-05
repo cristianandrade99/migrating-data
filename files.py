@@ -9,10 +9,12 @@ from tqdm import tqdm
 
 prepare='prepare'
 migrate='migrate'
+prepare_files='prepare_files'
+migrate_files='migrate_files'
 exit_process = 'Salir'
 source = sys.argv[1]
 action = sys.argv[2]
-destiny = 'D:/test'
+destiny = 'D:\Fotos y Videos'
 json_destiny='./paths.json'
 progress_destiny='./progress.json'
 image_video_extensions=[
@@ -71,11 +73,14 @@ def get_all_different_extensions(paths):
 
 def get_image_video_paths(paths):
     image_video_paths=[]
+    other_paths=[]
     for current_path in paths:
         _,ext,_=current_path
         if ext in image_video_extensions:
             image_video_paths.append(current_path)
-    return image_video_paths
+        else:
+            other_paths.append(current_path)
+    return image_video_paths,other_paths
 
 def get_group_by_date(paths):
     groups={}
@@ -94,13 +99,13 @@ def get_list(groups):
     list_group.sort(key=lambda group: group.get('key'))
     return list_group
 
-def register_groups(array):
-    save_json(array,json_destiny)
+def register_groups(array,json_destiny_param,progress_destiny_param):
+    save_json(array,json_destiny_param)
     progress=[]
     for group in array:
         key = group['key']
         progress.append({'key':key,'migrated':False})
-    save_json(progress,progress_destiny)
+    save_json(progress,progress_destiny_param)
 
 def load_data(source):
     with open(source,encoding='utf8') as file:
@@ -115,9 +120,9 @@ def find_index(array,value):
             break
     return index
 
-def save_progess(progress,new_index):
+def save_progess(progress,new_index,progress_destiny_param):
     progress[new_index]['migrated']=True
-    save_json(progress,progress_destiny)
+    save_json(progress,progress_destiny_param)
 
 def create_directory(directory):
     try:
@@ -147,18 +152,55 @@ def migrate_data():
                     tqdm_paths.set_description(current_option)
                     for path in tqdm_paths:
                         shutil.copy2(path,directory)
-                    save_progess(progress,new_index)
+                    save_progess(progress,new_index,progress_destiny)
                 if current_option==selected_option:
                     break   
 
+def migrate_data_files():
+    data = load_data('./paths-files.json')
+    progress = load_data('./progress-files.json')
+    title = 'Escoge hasta qué fecha migrar'
+    continue_app=True
+    while(continue_app):
+        options = [item['key'] for item in progress if item['migrated'] == False]+[exit_process]
+        selected_option,_ = pick(options, title)
+        if(selected_option==exit_process):
+            continue_app=False
+        else:
+            for current_option in options:
+                new_index = find_index(progress,current_option)
+                if(new_index!=-1):
+                    paths = data[new_index]['paths']
+                    tqdm_paths=tqdm(paths)
+                    tqdm_paths.set_description(current_option)
+                    for path in tqdm_paths:
+                        removed_prefix=os.path.relpath(path, r'C:\Users\Games\Documents\Migracion')
+                        destiny_directory=os.path.join('D:/Archivos',removed_prefix)
+                        create_directory(destiny_directory)
+                        shutil.copy2(path,destiny_directory)
+                    save_progess(progress,new_index,'./progress-files.json')
+                if current_option==selected_option:
+                    break
+
+# Image and videos
 if action==prepare:
     all_file_paths=get_all_file_paths()
-    image_video_paths=get_image_video_paths(all_file_paths)
+    image_video_paths,_=get_image_video_paths(all_file_paths)
     group_by_date=get_group_by_date(image_video_paths)
     array=get_list(group_by_date)
-    register_groups(array)
+    register_groups(array,json_destiny,progress_destiny)
 elif action==migrate:
     migrate_data()
+
+# Other files
+elif action==prepare_files:
+    all_file_paths=get_all_file_paths()
+    _,other_paths=get_image_video_paths(all_file_paths)
+    group_by_date=get_group_by_date(other_paths)
+    array=get_list(group_by_date)
+    register_groups(array,'./paths-files.json','./progress-files.json')
+elif action==migrate_files:
+    migrate_data_files()
 
 # cd C:\Users\Games\Downloads\migration-data 
 # python files.py C:\Users\Games\Documents\Migracion migrate
