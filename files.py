@@ -6,15 +6,17 @@ import json
 import time
 from pick import pick
 from tqdm import tqdm
+from itertools import groupby
 
 prepare='prepare'
 migrate='migrate'
 prepare_files='prepare_files'
 migrate_files='migrate_files'
+validation='validation'
 exit_process = 'Salir'
 source = sys.argv[1]
 action = sys.argv[2]
-destiny = 'D:\Fotos y Videos'
+destiny = 'D:/Fotos y Videos'
 json_destiny='./paths.json'
 progress_destiny='./progress.json'
 image_video_extensions=[
@@ -52,9 +54,9 @@ def get_date_data(key):
     month=key[5:7]
     return year,month
 
-def get_all_file_paths():
+def get_all_file_paths(source_param):
     paths=[];
-    for root, _, files in os.walk(source):
+    for root, _, files in os.walk(source_param):
         for file in files:
             path = os.path.join(root,file)
             _,ext = os.path.splitext(path)
@@ -182,9 +184,90 @@ def migrate_data_files():
                 if current_option==selected_option:
                     break
 
+def get_all_files_names(file_paths):
+    return [ [path[0],os.path.basename(path[0]),path[1]] for path in file_paths]
+
+def all_equal(iterable):
+    g = groupby(iterable)
+    return next(g, True) and not next(g, False)
+
+def run_validation(all_files_names_source,all_files_names_destiny):
+    # destinies_names = [ item[1] for item in  all_files_names_destiny]
+    # results=[];
+    # tqdm_sources=tqdm(all_files_names_source)
+    # for source in tqdm_sources:
+    #     if source[1] not in destinies_names:
+    #        results.append(source[0]) 
+    # save_json(results,'./validation.json')
+    # save_json(destinies_names,'./destinies_names.json')
+
+    # extensions={}
+    # tqdm_sources=tqdm(all_files_names_source)
+    # for source in tqdm_sources:
+    #     ext=source[2]
+    #     if ext not in extensions:
+    #         extensions[ext]={'source':0,'destiny':0}
+    #     else:
+    #         extensions[ext]['source']+=1
+    # tqdm_destinies=tqdm(all_files_names_destiny)
+    # for destiny in tqdm_destinies:
+    #     ext=destiny[2]
+    #     if ext not in extensions:
+    #         extensions[ext]={'source':0,'destiny':0}
+    #     else:
+    #         extensions[ext]['destiny']+=1
+    # save_json(extensions,'./validation.json')
+    
+    # results=[]
+    # tqdm_sources=tqdm(all_files_names_source)
+    # for item in tqdm_sources:
+    #     current_path=item[0]
+    #     ext=item[2]
+    #     if ext in image_video_extensions and r'C:\\Users\\Games\\Documents\\Migracion\\Eduar\\Instaladores' not in current_path:
+    #         paths=[]
+    #         for item2 in all_files_names_source:
+    #             if item[1] == item2[1]:
+    #                 paths.append(item2[0])
+    #         if len(paths)>1:
+    #             data=[]
+    #             sizes=[]
+    #             for path in paths:
+    #                 size=os.path.getsize(path)
+    #                 sizes.append(size)
+    #                 data.append([path,size])
+    #             if not all_equal(sizes):
+    #                 results.append(data)
+    # save_json(results,'./validation.json')
+
+    # data = load_data('./validation.json')
+    # new_data=[]
+    # for repeateds in data:
+    #     if 'Eduar\\Instaladores' not in repeateds[0][0]:
+    #         new_data.append(repeateds)
+    # save_json(new_data,'./validation.json')
+
+    # data = load_data('./validation.json')
+    # last_step_data=[]
+    # for repeateds in tqdm(data):
+    #     for i in range(len(repeateds)):
+    #         old_path = repeateds[i][0]
+    #         year = datetime.datetime.fromtimestamp(os.path.getmtime(old_path)).strftime('%Y')
+    #         base_name=os.path.basename(old_path)
+    #         file_name,ext = os.path.splitext(base_name)
+    #         new_path=os.path.join(destiny,year,f'{file_name}_{i}{ext}')
+    #         last_step_data.append([old_path,new_path])
+    # save_json(last_step_data,'./last_step_data.json')
+
+    last_step_data = load_data('./last_step_data.json')
+    for item in tqdm(last_step_data):
+        source = item[0]
+        destiny = item[1]
+        shutil.copy2(source,destiny)
+
+
 # Image and videos
 if action==prepare:
-    all_file_paths=get_all_file_paths()
+    all_file_paths=get_all_file_paths(source)
     image_video_paths,_=get_image_video_paths(all_file_paths)
     group_by_date=get_group_by_date(image_video_paths)
     array=get_list(group_by_date)
@@ -194,7 +277,7 @@ elif action==migrate:
 
 # Other files
 elif action==prepare_files:
-    all_file_paths=get_all_file_paths()
+    all_file_paths=get_all_file_paths(source)
     _,other_paths=get_image_video_paths(all_file_paths)
     group_by_date=get_group_by_date(other_paths)
     array=get_list(group_by_date)
@@ -202,6 +285,13 @@ elif action==prepare_files:
 elif action==migrate_files:
     migrate_data_files()
 
+# Validation
+elif action==validation:
+    all_file_paths_source=get_all_file_paths(r'C:\Users\Games\Documents\Migracion')
+    all_file_paths_destiny=get_all_file_paths(r'D:/')
+    all_files_names_source=get_all_files_names(all_file_paths_source)
+    all_files_names_destiny=get_all_files_names(all_file_paths_destiny)
+    run_validation(all_files_names_source,all_files_names_destiny)
 # cd C:\Users\Games\Downloads\migration-data 
 # python files.py C:\Users\Games\Documents\Migracion migrate
 
